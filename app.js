@@ -38,7 +38,6 @@ function createNewToDo() {
   toDos.push({
       title: newToDoText.value,
       complete: false
-      id: ++id
     });
 
   id++;
