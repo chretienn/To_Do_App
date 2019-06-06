@@ -21,6 +21,15 @@ function onReady(){
       let buttonLiText = this.parentElement.childNodes[0].textContent;
       TODO_LIST.removeChild(this.parentElement);
 
+function createNewToDo() {
+  const newToDoText = document.getElementById('newToDoText');
+  if (!newToDoText.value) { return; }
+  toDos.push({
+      title: newToDoText.value,
+      complete: false
+    });
+
+
       toDos.forEach(function(currentToDo, index){
 
         if(currentToDo === buttonLiText){
